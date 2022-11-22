@@ -154,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We consider the problem of learning a function that can estimate the 3D shape, articulation, viewpoint, texture, and lighting of an articulated object like a horse or a bird, given a single test image. We learn this function purely from in-the-wild single-view images of the object category, making minimal assumptions about the object deformations and topology. We represent the object via an implicit-explicit representation of the shape and appearance, combining the strengths of radiance fields and meshes, and further learn an articulation model from scratch using blend skinning. In order to help the model understand an object's pose and deformation, we distil the knowledge captured by an off-the-shelf self-supervised vision transformer and fuse it into the 3D model. To overcome common local optima in viewpoint estimation, we also introduce a new viewpoint sampling scheme that comes at no added training cost. Compared to prior works, we show significant quantitative and qualitative improvements on this challenging task using standard benchmarks. The model also shows excellent generalisation in reconstructing 3D objects in drawings and paintings, despite the fact that the model is only trained on real images.
+            We consider the problem of learning a function that can estimate the 3D shape, articulation, viewpoint, texture, and lighting of an articulated animal like a horse, given a single test image. We learn this function purely from in-the-wild single-view images of the object category, with minimal assumptions about the topology of deformation. We represent the object via an implicit-explicit representation of the shape and appearance, combining the strengths of neural fields and meshes, and further learn an blend skinning articulation model from scratch. In order to help the model understand an object's pose and deformation, we distil the knowledge captured by an off-the-shelf self-supervised vision transformer and fuse it into the 3D model. To overcome common local optima in viewpoint estimation, we also introduce a new viewpoint sampling scheme that comes at no added training cost. Compared to prior works, we show significant quantitative and qualitative improvements on this challenging task. The model also demonstrates excellent generalisation in reconstructing abstract drawings and artefacts, despite being trained only on real images.
           </p>
         </div>
       </div>
@@ -166,7 +166,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Video</h2>
         <video id="video" playsinline height="100%" controls>
-          <source src="https://www.robots.ox.ac.uk/~szwu/storage/23_horse/video.mp4"
+          <source src="https://www.robots.ox.ac.uk/~szwu/storage/23_magicpony/video.mp4"
                   type="video/mp4">
         </video>
       </div>
@@ -252,7 +252,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{wu2022magicpony,
   author    = {Shangzhe Wu and Ruining Li and Tomas Jakab and Christian Rupprecht and Andrea Vedaldi },
-  title     = {MagicPony: Learning Articulated 3D Animals in the Wild},
+  title     = {{MagicPony}: Learning Articulated 3D Animals in the Wild},
   journal   = {arXiv preprint arXiv:},
   year      = {2022},
 }</code></pre>
